@@ -5,7 +5,6 @@ from utils_mel import inv_melspectrogram, save_wav
 
 if __name__ == '__main__':
     mel = np.load('mel_outputs.npy')
-    print(mel.shape)
     plt.imshow(mel, aspect='auto', origin='bottom', interpolation='none')
     plt.show()
 
