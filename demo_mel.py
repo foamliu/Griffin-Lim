@@ -13,6 +13,9 @@ if __name__ == '__main__':
     mel = mel * 2 - 1
     mel = mel * 4
 
+    plt.imshow(mel, aspect='auto', origin='bottom', interpolation='none')
+    plt.show()
+
     print(np.max(mel))
     print(np.min(mel))
 
